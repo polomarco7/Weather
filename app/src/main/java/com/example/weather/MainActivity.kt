@@ -1,7 +1,6 @@
 package com.example.weather
 
 import androidx.appcompat.app.AppCompatActivity
-import androidx.navigation.ui.AppBarConfiguration
 import android.os.Bundle
 import androidx.navigation.fragment.NavHostFragment
 import com.example.weather.databinding.ActivityMainBinding
