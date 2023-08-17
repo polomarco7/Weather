@@ -1,5 +1,6 @@
-package com.example.weather
+package com.example.weather.data
 
+import com.example.weather.entity.ForecastModel
 import com.squareup.moshi.Moshi
 import com.squareup.moshi.kotlin.reflect.KotlinJsonAdapterFactory
 import retrofit2.Retrofit

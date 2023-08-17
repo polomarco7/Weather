@@ -1,4 +1,4 @@
-package com.example.weather
+package com.example.weather.entity
 
 import com.squareup.moshi.Json
 import com.squareup.moshi.JsonClass
@@ -22,7 +22,7 @@ data class Day(
     @Json(name = "avgtemp_c")val avgtempc: Double,
     @Json(name = "maxwind_kph")val maxwindkph: Double,
     val avghumidity:Double,
-    val condition:Condition
+    val condition: Condition
 )
 
 @JsonClass(generateAdapter = true)

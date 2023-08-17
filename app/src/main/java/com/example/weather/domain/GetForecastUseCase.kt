@@ -1,5 +1,7 @@
-package com.example.weather
+package com.example.weather.domain
 
+import com.example.weather.entity.ForecastModel
+import com.example.weather.data.Repository
 import javax.inject.Inject
 
 class GetForecastUseCase @Inject constructor(
