@@ -8,7 +8,7 @@ import retrofit2.http.GET
 import retrofit2.http.Headers
 import retrofit2.http.Query
 
-private const val BASE_URL = "http://api.weatherapi.com/v1"
+private const val BASE_URL = "https://api.weatherapi.com"
 
 object RetrofitServices {
     private val moshi = Moshi.Builder()
@@ -24,12 +24,12 @@ object RetrofitServices {
 }
 
 interface GetDataList {
-    @Headers("X-API-KEY: $api_key")
-    @GET("/forecast.json")
+    @Headers("key: $api_key")
+    @GET("/v1/forecast.json")
     suspend fun getForecast(
         @Query("q") city: String,
         @Query("days") days: Int = 5,
-    ): Forecast
+    ): ForecastModel
 
     private companion object {
         private const val api_key = "9260986f2592439f87a211518231608"

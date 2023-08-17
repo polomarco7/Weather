@@ -1,6 +1,10 @@
 <resources>
     <string name="app_name">Weather</string>
-    <string name="search">Поиск…</string>
+    <string name="search">Город</string>
     <string name="search_button">Найти</string>
-    <string name="list_city">weather</string>
+    <string name="list_forecast">Condition</string>
+    <string name="temp">temp</string>
+    <string name="wind">wind</string>
+    <string name="humidity">humidity</string>
+    <string name="date">Date</string>
 </resources>
