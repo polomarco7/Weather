@@ -6,7 +6,7 @@
     <string name="temp">temp</string>
     <string name="wind">wind</string>
     <string name="date">Date</string>
-    <string name="temp_c">temp %1$s \u2103</string>
-    <string name="wind_kph">wind %1$s kph</string>
-    <string name="humidity">humidity %1$s%% </string>
+    <string name="temp_c">temp\n %1$s \u2103</string>
+    <string name="wind_kph">wind\n %1$s kph</string>
+    <string name="humidity">humidity\n %1$s%% </string>
 </resources>
