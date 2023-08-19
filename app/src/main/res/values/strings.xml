@@ -5,6 +5,8 @@
     <string name="list_forecast">Condition</string>
     <string name="temp">temp</string>
     <string name="wind">wind</string>
-    <string name="humidity">humidity</string>
     <string name="date">Date</string>
+    <string name="temp_c">temp %1$s \u2103</string>
+    <string name="wind_kph">wind %1$s kph</string>
+    <string name="humidity">humidity %1$s%% </string>
 </resources>

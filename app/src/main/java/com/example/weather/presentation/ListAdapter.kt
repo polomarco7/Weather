@@ -6,6 +6,7 @@ import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
+import com.example.weather.R
 import com.example.weather.databinding.ListForecastBinding
 import com.example.weather.entity.Forecastday
 
@@ -28,12 +29,12 @@ class ListAdapter : ListAdapter<Forecastday, ViewHolder>(DiffUtilCallback()) {
             item.let {
                 Glide
                     .with(icon.context)
-                    .load(it.day.condition.icon)
+                    .load("https:${it.day.condition.icon}")
                     .into(icon)
             }
-            temp.text = "temp ${item.day.avgtempc} C"
-            wind.text = "wind ${item.day.maxwindkph} kph"
-            humidity.text = " humidity ${item.day.avghumidity} %"
+            temp.text = holder.binding.root.context.getString(R.string.temp_c, item.day.avgtempc.toString())
+            wind.text = holder.binding.root.context.getString(R.string.wind_kph, item.day.maxwindkph.toString())
+            humidity.text = holder.binding.root.context.getString(R.string.humidity, item.day.avghumidity.toString())
         }
     }
 }
